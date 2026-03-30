@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Send" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+    </style>
+
+    <style name="GreenButton">
+        <item name="android:background">#008000</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="backgroundTint">#008000</item>
+
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Base.Theme.Send" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:background="@drawable/edittext_search_background"
+                android:drawableLeft="@drawable/ic_searchicon"
+                android:textSize="18sp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:drawablePadding="16dp"
+                android:text="search here..."
+                android:textColorHint="@color/primary"
+                android:gravity="center_vertical"
+                android:inputType="text"/>
+
+
+            <ImageButton
+                android:id="@+id/btn_imagesearch"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/ic_photo_camera_50"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+
+            <ImageButton
+                android:id="@+id/btn_collect_item"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/ic_like"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/btn_chat"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:background="@drawable/ic_chat"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="5000"
+                app:iss_period="5000" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_slider"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="Donations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="Requests"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="Nearby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.tabs.TabLayout>
+
+
+
+            <FrameLayout
+                android:id="@+id/frameLayoutEXPLORE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_below="@id/tabLayout"/>
+
+
+            <RelativeLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="10dp">
+                <!-- Add any additional views here -->
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

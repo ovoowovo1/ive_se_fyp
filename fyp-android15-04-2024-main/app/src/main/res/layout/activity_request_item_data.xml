@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserRequest.RequestItemDataActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="13dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/background_image"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/UserID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="userID:"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:id="@+id/BabyAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Baby Age:"
+                        android:padding="10dp"/>
+
+
+
+                    <TextView
+                        android:id="@+id/BabyGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Baby Gender:"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/Item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item type"
+                android:padding="13dp"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expect Quantity"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/Item_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expect quantity"
+                android:padding="13dp"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size or Range"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/size_or_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size or range"
+                android:padding="13dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Urgency"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/Urgency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Urgency"
+                android:padding="13dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reason of the request"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/Reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reason"
+                android:padding="13dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Note"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/additionalNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Note"
+                android:padding="13dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="80dp">
+
+                <Button
+                    android:id="@+id/btnDecrement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/txtNumber"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <Button
+                    android:id="@+id/btnIncrement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SendDetail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Donate"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:onClick="Offer"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

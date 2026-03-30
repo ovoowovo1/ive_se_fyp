@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRequest.UserCreateRequestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baby's Age"
+            />
+
+
+
+        <EditText
+            android:id="@+id/babyAge"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Baby Age"
+            android:background="@drawable/background_input_state"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baby gender(optional)"
+            android:layout_marginTop="26dp"
+            />
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@drawable/background_input"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type of Items Needed"
+            android:layout_marginTop="26dp"
+            />
+
+        <Spinner
+            android:id="@+id/ItemsType"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@drawable/background_input"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity(s)"
+            android:layout_marginTop="26dp"/>
+
+        <EditText
+            android:id="@+id/quantityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Enter quantity"
+            android:inputType="number"
+            android:background="@drawable/background_input_state"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size or Age Range for Items (if applicable)"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/background_input"
+            />
+
+        <EditText
+            android:id="@+id/itemSize"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Size or Age Range for Items"
+            android:background="@drawable/background_input_state"
+            />
+
+        <!-- Urgency Level -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="indicate the urgency"
+            android:layout_marginTop="26dp"/>
+
+        <Spinner
+            android:id="@+id/urgencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@drawable/background_input"
+            />
+
+        <!-- Reason for Request -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reason for Request (Optional)"
+            android:layout_marginTop="26dp"/>
+
+        <EditText
+            android:id="@+id/reasonForRequest"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:lines="10"
+            android:minLines="1"
+            android:maxLines="10"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/background_input_state"
+            android:hint="Enter the reason for your request here"/>
+
+        <!-- Additional Notes -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional Notes"
+            android:layout_marginTop="26dp"/>
+
+        <EditText
+            android:id="@+id/additionalNotes"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:hint="Additional Notes"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:lines="10"
+            android:minLines="1"
+            android:maxLines="10"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:importantForAutofill="no"
+            android:background="@drawable/background_input_state"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitRequestButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Submit Request"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="26dp"
+            android:background="#008000"
+            android:onClick="submit"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activities.SettingActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_EditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/EditProfileIcon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/background_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_edit_name"
+                    app:riv_oval="true"
+                    tools:ignore="DuplicateIds" />
+
+
+                <TextView
+                    android:id="@+id/tv_EditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Edit Profile"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/secondary_text" />
+
+            <LinearLayout
+                android:id="@+id/ll_ChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/ChangePasswordIcon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/background_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_lock"
+                    app:riv_oval="true"
+                    tools:ignore="DuplicateIds" />
+
+
+                <TextView
+                    android:id="@+id/tv_ChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Change Password"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/secondary_text" />
+
+            <LinearLayout
+                android:id="@+id/ll_Calender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/CalenderIcon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/background_image"
+                    android:src="@drawable/ic_calendar_three"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true"
+                    tools:ignore="DuplicateIds" />
+
+
+                <TextView
+                    android:id="@+id/tv_Calender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Time Table"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help And Support"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_AICS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/AICSIcon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/background_image"
+                    android:src="@drawable/ic_robot_one"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true"
+                    tools:ignore="DuplicateIds" />
+
+
+                <TextView
+                    android:id="@+id/tv_AICS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="AI Customer Service"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/secondary_text" />
+
+            <LinearLayout
+                android:id="@+id/ll_ContactUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <ImageButton
+                    android:id="@+id/ContactUsIcon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/background_image"
+                    android:src="@drawable/ic_send_email"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/tv_ContactUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Contact Us"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings And Privacy"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_LogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/LogoutIcon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/background_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_logout"
+                    app:riv_oval="true"
+                    tools:ignore="DuplicateIds" />
+
+
+                <TextView
+                    android:id="@+id/tv_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Log Out"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/secondary_text"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/ll_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+
+                <ImageButton
+                    android:id="@+id/testIcon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/background_image"
+                    android:src="@drawable/ic_send_email"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/tv_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="test"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

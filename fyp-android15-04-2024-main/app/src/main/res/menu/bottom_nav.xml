@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_explore"
+        android:title="Home"
+        android:icon="@drawable/searchicon"/>
+
+    <item android:id="@+id/bottom_forYou"
+        android:title="For You"
+        android:icon="@drawable/ic_for_you"/>
+
+    <item android:id="@+id/bottom_add"
+        android:title="Add"
+        android:icon="@drawable/ic_add_one"/>
+
+    <item android:id="@+id/bottom_activity"
+        android:title="Activity"
+        android:icon="@drawable/ic_remind"/>
+
+    <item android:id="@+id/bottom_me"
+        android:title="Me"
+        android:icon="@drawable/ic_me"/>
+
+</menu>

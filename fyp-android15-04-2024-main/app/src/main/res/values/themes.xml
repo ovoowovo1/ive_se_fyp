@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Send" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+    </style>
+
+    <style name="GreenButton">
+        <item name="android:background">#008000</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="backgroundTint">#008000</item>
+
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Base.Theme.Send" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="CommentRatingBar" parent="@style/Widget.AppCompat.RatingBar.Small">
+        <item name="android:progressTint">@color/RattingBar</item> <!-- Use the custom color -->
+        <item name="android:progressBackgroundTint">@android:color/darker_gray</item> <!-- Background color -->
+    </style>
+
+    <style name="CustomRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressTint">@color/RattingBar</item>
+        <item name="android:progressBackgroundTint">@android:color/darker_gray</item>
+    </style>
+
+
+    <!-- <style name="Theme.Send" parent="Base.Theme.Send" />-->
+</resources>

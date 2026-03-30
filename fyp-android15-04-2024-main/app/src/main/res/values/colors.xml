@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#1C2E46</color>
+    <color name="primary_dark">#142232</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="input_background">#20DFD5D5</color>
+    <color name="error">#B00020</color>
+    <color name="received_message_background">#090D16</color>
+    <color name="green">#008000</color>
+    <color name="deep_green">#107161</color>
+    <color name="shadow">#ababab</color>
+    <color name="light_green">#CCE9E4</color>
+    <color name="RattingBar">#FFE929</color>
+    <color name="light_blue">#EBF1FD</color>
+    <color name="btn_green">#09C5B3</color>
+    <color name="blue">#0000FF</color>
+    <color name="e9e9e9">#E9E9E9</color>
+</resources>

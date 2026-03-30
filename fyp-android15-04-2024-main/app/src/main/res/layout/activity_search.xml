@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical"
+    tools:context=".activities.Search">
+
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/edittext_search_background"
+        android:drawableLeft="@drawable/ic_searchicon"
+        android:textSize="18sp"
+        android:paddingLeft="16dp"
+        android:drawablePadding="16dp"
+        android:hint="search here..."
+        android:textColorHint="@color/primary"
+        android:inputType="text"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:focusableInTouchMode="true"
+        android:imeOptions="actionSearch"
+        />
+
+    <TextView
+        android:id="@+id/tv_addition_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="addition options"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/green"
+        android:drawableLeft="@drawable/ic_arrow_down"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_higher_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sort by"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_new_to_old"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="From new to old"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rb_old_to_new"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="From old to new"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item Type"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"/>
+
+        <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Condition"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"/>
+
+        <Spinner
+        android:id="@+id/spinnerCondition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deal Method"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"/>
+
+
+        <Spinner
+            android:id="@+id/spinnerMethod"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"/>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/secondary_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Search"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/secondary_text"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_search" />
+
+</LinearLayout>
