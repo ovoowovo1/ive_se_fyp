@@ -17,6 +17,13 @@ This repository contains the working files for a Final Year Project focused on b
 - The web system supports administrators who review users, moderate donation posts, manage announcements, inspect reports, and configure AI-assisted features.
 - Supporting AI-related work in the project includes recommendation, image search, customer service, and content review.
 
+## Web CI
+
+- GitHub Actions runs the Web CI workflow on pull requests to `main` and on pushes to `main`.
+- The workflow checks the web frontend in `react-fyp-main/client` with `npm ci`, `npm run lint`, `npm test`, and `npm run build`.
+- The workflow checks the web backend in `react-fyp-main/server` with `npm ci` and `npm test`.
+- If a GitHub Actions run fails, inspect the `Client CI` or `Server CI` job log first to see which step broke.
+
 ## Mobile App Interface Catalog
 
 The mobile app is designed around four main flows: account access, discovery, donation and request handling, and user communication.
@@ -184,4 +191,3 @@ The web system uses a dashboard-style layout for moderation, administration, ann
 - The admin system follows a dashboard pattern with lists, filters, moderation actions, and management forms.
 - Search, recommendation, map browsing, chat, and reporting are treated as first-class flows in the user experience.
 - AI is integrated as a support layer for customer service, recommendation, and moderation rather than as a standalone module.
-
